@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Final JS</title>
+    <!-- link to leaflet css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <!-- link to our app.js -->
+    <script src="app.js" defer></script>
+
+    <!-- leaflet js -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <!-- internal css -->
+    <style>
+      button {
+        display: block;
+        margin: 10px auto;
+      }
+      #map {
+        height: 400px;
+        margin-top: 1em;
+        border: solid 2px orange;
+      }
+      form {
+        margin-top: 2em;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <select id="differ-options">
+        <option value="restaurants">Restaurants</option>
+        <option value="markets">Makets</option>
+        <option value="hotels">Hotels</option>
+        <option value="coffee">Coffee Shop</option>
+      </select>
+    </form>
+    <button id="mybtn" type="button">submit</button>
+
+    <div id="map"></div>
+  </body>
+</html>
